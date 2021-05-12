@@ -9,5 +9,4 @@ services:
 before_script: pip install docker-compose
 
 script:
-  - docker-compose sh -c "python manage.py wait_for_db
   - docker-compose run app sh -c "python manage.py test"
